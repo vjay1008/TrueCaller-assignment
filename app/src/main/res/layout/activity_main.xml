@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background"
+    android:padding="@dimen/layout_padding"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_height"
+        android:text="@string/_10th_character"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/process_img_1"
+        android:layout_width="@dimen/process_img_size"
+        android:layout_height="@dimen/process_img_size"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:src="@drawable/processing_gif"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/tv1_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv1_label"
+        app:layout_constraintStart_toEndOf="@id/tv1_label"/>
+
+
+    <TextView
+        android:id="@+id/tv1_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_label_size"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:textColor="@color/text_value_color"
+        app:layout_constraintTop_toTopOf="@id/tv1_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv1_label"
+        app:layout_constraintStart_toEndOf="@id/process_img_1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/process_img_2"
+        android:layout_width="@dimen/process_img_size"
+        android:layout_height="@dimen/process_img_size"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:src="@drawable/processing_gif"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/tv2_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv2_label"
+        app:layout_constraintStart_toEndOf="@id/tv2_label"/>
+
+
+    <TextView
+        android:id="@+id/tv2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/label_margin"
+        android:text="@string/every_10th_character"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1_label" />
+
+    <TextView
+        android:id="@+id/tv2_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_label_size"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:textColor="@color/text_value_color"
+        app:layout_constraintTop_toTopOf="@id/tv2_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv2_label"
+        app:layout_constraintStart_toEndOf="@id/process_img_2"/>
+
+    <TextView
+        android:id="@+id/tv3_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/label_margin"
+        android:text="@string/unique_word_count"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2_label" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/process_img_3"
+        android:layout_width="@dimen/process_img_size"
+        android:layout_height="@dimen/process_img_size"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:src="@drawable/processing_gif"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/tv3_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv3_label"
+        app:layout_constraintStart_toEndOf="@id/tv3_label"/>
+
+
+    <TextView
+        android:id="@+id/tv3_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_label_size"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:textColor="@color/text_value_color"
+        app:layout_constraintTop_toTopOf="@id/tv3_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv3_label"
+        app:layout_constraintStart_toEndOf="@id/process_img_3"/>
+
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/button_height"
+        android:background="@color/button_background"
+        android:textColor="@android:color/white"
+        android:text="@string/btn_label"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".5"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

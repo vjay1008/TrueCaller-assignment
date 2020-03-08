@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrueCaller</string>
+    <string name="btn_label">Run</string>
+    <string name="_10th_character">1. 10th Character : </string>
+    <string name="every_10th_character">2. Every 10th Character : </string>
+    <string name="unique_word_count">3. Unique word count : </string>
+    <string name="dummy_text">Dummy  Text</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_bottom_margin">50dp</dimen>
+    <dimen name="layout_padding_left">30dp</dimen>
+    <dimen name="layout_padding">30dp</dimen>
+    <dimen name="text_label_size">18sp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="label_margin">30dp</dimen>
+    <dimen name="process_img_size">20dp</dimen>
+</resources>

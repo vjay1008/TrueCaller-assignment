@@ -72,11 +72,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_label_size"
+        android:maxLines="6"
         android:textStyle="bold"
         android:layout_marginStart="@dimen/margin_10dp"
         android:textColor="@color/text_value_color"
         app:layout_constraintTop_toTopOf="@id/tv2_label"
-        app:layout_constraintBottom_toBottomOf="@id/tv2_label"
         app:layout_constraintStart_toEndOf="@id/process_img_2"/>
 
     <TextView
@@ -88,7 +88,7 @@
         android:textColor="@android:color/white"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv2_label" />
+        app:layout_constraintTop_toBottomOf="@id/tv2_value" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/process_img_3"

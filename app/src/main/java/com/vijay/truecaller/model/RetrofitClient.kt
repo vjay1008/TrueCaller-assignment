@@ -1,6 +1,10 @@
 package com.vijay.truecaller.model
 
 
+import androidx.viewpager.widget.PagerAdapter
+import com.google.gson.internal.bind.ArrayTypeAdapter.FACTORY
+import com.google.gson.internal.bind.DateTypeAdapter.FACTORY
+import com.google.gson.internal.bind.ObjectTypeAdapter.FACTORY
 import com.vijay.truecaller.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
